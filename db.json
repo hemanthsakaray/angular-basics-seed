@@ -1,1 +1,49 @@
-{}
+{
+  "donuts": [
+    {
+      "id": "xyz1123",
+      "name": "Chocolate Donut",
+      "icon": "just-chocolate",
+      "price": 199,
+      "promo": "limited",
+      "description": "For chochlate lovers"
+    },
+    {
+      "id": "xyz5645",
+      "name": "Glazed Fudge",
+      "icon": "glazed-fudge",
+      "price": 158,
+      "promo": "new",
+      "description": "For stickey lovers"
+    },
+    {
+      "id": "xyz8973",
+      "name": "Caramel Swirl",
+      "icon": "caramel-swirl",
+      "price": 179,
+      "description": "For Caramel lovers"
+    },
+    {
+      "id": "xyz8789",
+      "name": "Sour Supreme",
+      "icon": "sour-supreme",
+      "price": 179,
+      "description": "For Sour enjoyers"
+    },
+    {
+      "id": "xyz8697",
+      "name": "Zesty Lemon",
+      "icon": "zesty-lemon",
+      "price": 179,
+      "description": "For lemon enjoyers"
+    },
+    {
+      "id": "7duvG-q",
+      "name": "Coco Carameltest",
+      "icon": "glazed-fudge",
+      "price": 299,
+      "promo": "new",
+      "description": "tesing"
+    }
+  ]
+}
