@@ -30,7 +30,7 @@ export const routes: Routes = [
     component: DonutSingleComponent,
     data: { isEdit: true },
   },
-  { path: '', pathMatch: 'full', redirectTo: 'donuts' },
+  { path: '', pathMatch: 'full', redirectTo: 'login' },
 ];
 
 @NgModule({

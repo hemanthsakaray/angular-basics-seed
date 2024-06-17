@@ -7,6 +7,9 @@ import {
   ContentChildren,
   AfterContentInit,
   QueryList,
+  ViewChild,
+  ElementRef,
+  AfterViewInit,
 } from '@angular/core';
 import { User } from 'src/app/models/user.model';
 import { CheckBoxComponent } from '../check-box/check-box.component';
@@ -75,7 +78,7 @@ import { CheckBoxComponent } from '../check-box/check-box.component';
     `,
   ],
 })
-export class LoginFormComponent implements AfterContentInit {
+export class LoginFormComponent implements AfterContentInit, AfterViewInit {
   @Input() user!: User;
 
   @Output() submitted: EventEmitter<User> = new EventEmitter<User>();
@@ -83,7 +86,13 @@ export class LoginFormComponent implements AfterContentInit {
   @ContentChildren(CheckBoxComponent)
   rememberChild!: QueryList<CheckBoxComponent>;
 
+  @ViewChild('email') email!: ElementRef;
+
   showMsg!: boolean;
+
+  ngAfterViewInit(): void {
+    console.log(this.email);
+  }
 
   ngAfterContentInit(): void {
     if (this.rememberChild) {
